@@ -1,0 +1,287 @@
+* {
+    font-family: 'Obliqua Sans';
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: left;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+body {
+/****** Margin: 0 10%; ******/
+background-color: white;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: #818181;
+    padding: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+}
+
+h1  {
+    font-size: 1.25rem;
+    }
+h2 {
+    font-size: 1rem;
+    }
+h3 {
+        font-size: .7rem;
+    }
+p{
+    font-size: .5rem;
+}
+    
+a:link, a:visited {
+        color:#ffffff;
+        text-decoration: none; 
+    }
+    
+a:hover {
+        color:#818181;
+        text-decoration: underline;
+    }
+
+footer {
+background-color: black;
+color: white;
+padding: 2rem;
+display: grid;
+gap: 1.5rem;
+grid-template-columns: repeat(12, 1fr);
+margin: 0 auto;
+}
+
+/******* Layout ******/
+.container {
+    align-content: center;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: 100%
+}
+
+.container > * {
+    grid-column: span 12;
+}
+
+.heroimage {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.subtitle{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+}
+
+.visualsearchbox{
+    grid-column: span 12; 
+    vertical-align: top;
+    margin: 2px;
+    max-width: 100%;
+    padding: 3rem  2rem;
+    border: #818181;
+    border-width: 1px;
+}
+
+ .visualsearch {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+    
+.fontboxes {
+    max-width: 400px;
+    padding: 0.5rem  0.5em;
+}
+
+.smfontboxes{
+    max-width: 300px;
+    padding: 0.5rem 1rem;
+}
+
+.btn {
+    top: 80%;
+    left: 50%;
+    background-color: white;
+    color: #818181;
+    font-size: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .viewpackbtn {
+    top: 80%;
+    left: 50%;
+    background-color: rgb(37, 70, 214);
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;  
+  }
+
+  .top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 46px;
+  }
+
+/****** Nav Flexbox ******/
+nav {
+    align-content: left;
+    background-color: white;
+    color: #818181;
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    top: 0;
+    border-radius: 25px;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav li {
+    margin: 0 0.5rem;
+}
+
+nav a:link, nav a:visited {
+    color: #818181;
+    text-decoration: none;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    display: block;
+    transition: ease-in-out 250ms;
+}
+
+nav a:hover {
+    background-color: lightgrey;
+    color: black;
+
+}
+
+/***** Components *****/
+.button:link, .button:visited {
+    color: white;
+    background-color: #818181;
+    padding: 1rem 1.75rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    margin: 0 .25rem .25rem 0;
+    transition: background-color 0.25s ease;
+}
+
+.button:hover {
+    background-color: #818181;
+}
+
+.list {
+    flex-direction: column;
+    list-style: none;
+    flex-wrap: wrap;
+    height: 10rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list li {
+    flex: 15 0 10%;
+    padding: 10px;
+    color: #818181;
+    font-size: 0.7rem;
+  }
+
+  .card {
+    text-align: left;
+    vertical-align: top;
+    margin: 2px;
+    max-width: 450px;
+    padding: 3rem  2rem;
+    box-shadow: 0 .125rem .5rem rgb(129, 129, 129);
+}
+
+.card-title {
+    margin: 0.75rem 0 0 0;
+    padding: 0 2rem 0.5rem;
+}
+
+.card-text {
+    text-align: left;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0 2rem 0.5rem
+}
+
+/****** Desktop Layout ******/
+@media screen and (min-width: 40rem){
+    .col-span-4{
+        grid-column: span 4; 
+        vertical-align: top;
+        margin: 2px;
+        max-width: 100%;
+        padding: 3rem  2rem;
+    } 
+
+    .col-span-3{
+        grid-column: span 3; 
+        vertical-align: top;
+        margin: 4px;
+        max-width: 100%;
+        padding: 3rem  2rem;
+    } 
+
+    .col-span-12{
+        grid-column: span 12; 
+        vertical-align: top;
+        margin: 4px;
+        max-width: 100%;
+        padding: 3rem  2rem;
+    } 
+
+    .left {
+        float: left;
+        display: block;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+
+    .fontpack{
+
+    }
+
+}

@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+Header {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: .5rem;
+}
+
+h1 {
+font-size: 2rem;
+}
+
+h2 {
+font-size: 1.5rem;
+color: #000000;
+}
+
+h3 {
+font-size: 1.25rem;
+color: #000000;
+}
+
+p {
+    color:  black;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+}
+
+/****** Layout ******/
+.container {
+    background-color: white;;
+    width: min(95%, 75rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+.container > * {
+    grid-column: span 12;
+}
+
+.container-logo {
+    width: min(100%, 100rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+.container-logo > * {
+    grid-column: span 12;
+}
+
+/****** Navigation ******/
+nav{
+    width: 100%;
+    background: white;
+}
+
+nav a{
+    padding: 20px 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0 0 0 150px;
+    padding: 0;
+}
+
+li {
+    float: right;
+}
+
+
+/****** Components ******/
+.button:link, .button:visited {
+    color: white;
+    background-color: #000000 ;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1.75rem;
+    border-radius: 2rem;
+    display: inline-block;
+    margin: 0, .25rem .25rem 0;
+    transition: background-color .5s ease;
+}
+.button:hover{
+    background-color: #170ac8;
+}
+
+.drugcard {
+    text-align: left;
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
+.drugcard:hover {
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
+.img-card{
+    border:rgb(0, 0, 0) solid .5px;
+}
+
+.card-title {
+    margin: 0.75rem 0 0 0;
+    padding: 0 2rem 0.5rem;
+}
+
+.card-text {
+    text-align: left;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0 2rem 0.5rem
+}
+
+.section{
+    display: flex;
+    justify-content: left;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/****** Desktop Layout ********/
+@media screen and (min-width: 40rem) {
+ .logo  {
+        grid-column: 1  /  span 2;
+}
+.menu  {
+    grid-column: 7  /  span 7;
+}
+
+.title {
+    grid-column: 1 / span 12;
+}
+}

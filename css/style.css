@@ -1,0 +1,37 @@
+body {
+margin: 0 10%;
+font-family: sans-serif;
+}
+
+
+Header {
+    background-color: #000000;
+    color: white;
+    padding: 2rem;
+}
+
+h1 {
+font-family: Helvetica;
+font-size: 2rem;
+}
+
+h2 {
+ font-family: Helvetica;
+font-size: 1.5rem;
+}
+
+h3 {
+font-family: Helvetica;
+font-size: 1.25rem;
+}
+
+p {
+    font-family: Helvetica;
+    color: #000000;
+    text-align: left;
+}
+
+.circle {
+border-radius: 50%;
+border: 5px;
+}
