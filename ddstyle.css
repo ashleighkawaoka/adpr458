@@ -110,19 +110,28 @@ a:hover{
 
 
 /******homepage layout*******/
-.recreational{
+.recreational, .prescription{
     background-color: black;
     padding-top: 40px;
 }
 
-.prescription{
-    background-color: black;
-    padding-top: 40px;
+.section-header{
+    justify-content: center;
+}
+
+.section-subheader{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 10px;
+    align-content: center;
+    margin-bottom: 60px;;
 }
 
 .section-title{
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
 }
 
 .section-title img{
