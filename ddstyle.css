@@ -264,3 +264,24 @@ a:hover{
         font-size: 15px;
     }
 }
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 10px 5px;
+    border-top: white solid 2px;
+}
+
+.section-footer-title{
+    display: grid;
+    margin: 0 20px;
+}
+
+.section-footer-description{
+    display: grid;
+    text-align: right;
+    margin: 0 20px;
+}
